@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"  href="CV.CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+    <h1>Мое резюме</h1>
+</head>
+<body>
+    <div class="grid-wrapper">
+         <div class="grid-item item-1">
+             <img src="https://sun9-26.userapi.com/impg/aGlS2M9WB6GQQzJj9wOkcldJrpqS7daVdyQI3Q/DyvhXN2H73I.jpg?size=810x1080&quality=95&sign=b4bca1d81621a93eb8a010b7dde17e8c&type=album">
+         </div>
+        <div class="grid-item item-2">
+            <h2>Немного обо мне</h2><hr>
+            <p>Меня зовут Жоглич Анастасия, мне 25 лет, живу в Санкт-Петербурге. Закончила Политехнический университет по направлению лингвистика, но сейчас решила сменить профессию.<br>
+            На данный момент прохожу курс FullStack-разработчик на обучающей платформе SkillFactory.</p>
+           <h2>Образование</h2><hr>
+            <button type="button" class="collapsible">Лингвистика</button>
+            <div class="content">
+              <p>Политех, лингвистика, перевод</p>
+            </div>
+            <button type="button" class="collapsible">Программирование</button>
+            <div class="content">
+              <p>SkillFactory, FullStack-разработчик</p>
+            </div>
+        </div>
+    </div>
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+    <h2>Мои навыки</h2><hr>
+    <p>HTML</p>
+    <div class="container">
+      <div class="skills html">70%</div>
+    </div>
+    <p>CSS</p>
+    <div class="container">
+      <div class="skills css">70%</div>
+    </div>
+    <p>JavaScript</p>
+    <div class="container">
+      <div class="skills js">65%</div>
+    </div>
+    <p>Python</p>
+    <div class="container">
+      <div class="skills python">75%</div>
+    </div>
+</body>
+<footer>
+<h3>Связаться со мной</h3>
+    <p>Телефон: +7(921) 586-88-71</p>
+    <p>Почта: djkiller1102@mail.ru</p>
+    <a href="https://vk.com/id6944103">Соцсети</a>
+</footer>
+</html>
